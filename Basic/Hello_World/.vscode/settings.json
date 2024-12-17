@@ -59,7 +59,7 @@
   "makefile.launchConfigurations": [
     {
       "cwd": "d:\\Codes\\git\\Cpp_Snippet\\Basic\\Hello_World",
-      "binaryPath": "d:\\Codes\\git\\Cpp_Snippet\\Basic\\Hello_World\\hello",
+      "binaryPath": "d:\\Codes\\git\\Cpp_Snippet\\Basic\\Hello_World\\main",
       "binaryArgs": []
     }
   ]

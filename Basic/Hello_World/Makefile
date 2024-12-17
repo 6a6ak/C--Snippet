@@ -1,21 +1,15 @@
-# Variables
-CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++17
-TARGET = hello
+PROG = main.exe 
+SRC = main.cpp
+CFLAGS = -g -std=c++17
+LIBS = 
+CC=g++
 
-# Build target
-all: $(TARGET)
+all: $(PROG)
 
-$(TARGET): main.o
-	$(CXX) $(CXXFLAGS) -o $(TARGET) main.o
+$(PROG): $(SRC)
+	$(CC) -o $@ $(CFLAGS) $(LDFLAGS) $(SRC)  $(LIBS) 
 
-main.o: main.cpp
-	$(CXX) $(CXXFLAGS) -c main.cpp
-
-# Clean up build artifacts
 clean:
-	rm -f *.o $(TARGET)
+	rm -f $(PROG)
 
-# Run the program
-run: $(TARGET)
-	./$(TARGET)
+.PHONY: all clean
