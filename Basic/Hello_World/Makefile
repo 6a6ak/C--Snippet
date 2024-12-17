@@ -1,15 +1,19 @@
 PROG = main.exe 
 SRC = main.cpp
-CFLAGS = -g -std=c++17
+CFLAGS = -O2 -std=c++17
 LIBS = 
-CC=g++
+CC = g++
 
 all: $(PROG)
 
 $(PROG): $(SRC)
-	$(CC) -o $@ $(CFLAGS) $(LDFLAGS) $(SRC)  $(LIBS) 
+	$(CC) -o $@ $(CFLAGS) $(SRC) $(LIBS)
 
 clean:
-	rm -f $(PROG)
+ifeq ($(OS),Windows_NT)
+	del $(PROG)
+else
+    rm -f $(PROG)
+endif
 
 .PHONY: all clean
