@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Codes/Git/C++Snippet/Hellp_World",
-      "program": "d:/Codes/Git/C++Snippet/Hellp_World/build/Debug/outDebug",
+      "cwd": "d:/Codes/git/Cpp_Snippet/Basic/Hello_World",
+      "program": "d:/Codes/git/Cpp_Snippet/Basic/Hello_World/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
