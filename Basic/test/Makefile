@@ -1,5 +1,5 @@
-PROG = array01.exe 
-SRC = array01.cpp
+PROG = array001.exe 
+SRC = array001.cpp
 CFLAGS = -O2 -std=c++17
 LIBS = 
 CC = g++
